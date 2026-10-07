@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# ROS 2 Colcon build artifacts (if built at root or standard paths)
+install/
+build/
+# Note: Root log/ is used for team records (meetings, decisions).
+# Only ignore colcon_logs if created:
+log/build_*/
+log/latest_*
+
+# Node / Web Frontend
+node_modules/
+dist/
+.next/
+
+# Data and large files (preserve .gitkeep and README.md)
+data/raw/*
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/synthetic/*
+!data/synthetic/.gitkeep
+data/rosbags/*
+!data/rosbags/.gitkeep
+
+# Model weights and checkpoints
+models/checkpoints/*
+!models/checkpoints/.gitkeep
+models/exported/*
+!models/exported/.gitkeep
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
